@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Bank</string>
+    <string name="mobile_banking">Mobile\nBanking</string>
+    <string name="sign_up">Sign up</string>
+    <string name="fist_name">Fist name</string>
+    <string name="last_name">Last name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="password">Password</string>
+    <string name="registration">Registration</string>
+    <string name="code_sent_to">Code sent to</string>
+    <string name="verification">Verification</string>
+    <string name="_998931433836">+998931433836</string>
+    <string name="request_in_00_55">Request in 01:00</string>
+    <string name="request_in_">Request in </string>
+    <string name="sign_in">Sign in</string>
+    <string name="login">Login</string>
+    <string name="verify">Verify</string>
+    <string name="change_password">Change password</string>
+    <string name="new_password">New password</string>
+    <string name="save_password">Save password</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="text_pravicy">The rybatext site will help a designer, layout designer, webmaster generate several paragraphs of a more or less meaningful fish text in Russian, and a novice speaker will hone his public speaking skills at home. When creating the generator, we used the well-known universal speech code. The text is randomly generated in paragraphs from two to ten sentences per paragraph, which makes the text more attractive and lively for visual and auditory perception.</string>
+    <string name="accept">Accept</string>
+    <string name="chack">I agree to all terms.</string>
+    <string name="forgot_password">Forgot password!</string>
+    <string name="wrong_phone">phone number is not correct</string>
+    <string name="wrong_password">the password must be at least 6 characters long</string>
+    <string name="wrong_firstname">the firstname must be at least 2 characters long</string>
+    <string name="wrong_lastname">the lastname must be at least 2 characters long</string>
+    <string name="account_">Account recovery</string>
+    <string name="to_get_a_verification_code_first_confirm_the_recovery_phone_number">To get a verification code, first confirm the \n recovery phone number</string>
+    <string name="send">Send</string>
+    <string name="text_signup_error">Something went wrong, please try again.</string>
+    <string name="text_verification_error">Please try again!</string>
+
+
+</resources>

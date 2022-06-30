@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav.xml"
+    app:startDestination="@id/registerScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="uz.gita.bank.presentation.ui.screens.SplashScreen"
+        android:label="screen_splash"
+        tools:layout="@layout/screen_splash" >
+        <action
+            android:id="@+id/action_splashScreen_to_languageScreen"
+            app:destination="@id/languageScreen" />
+        <action
+            android:id="@+id/action_splashScreen_to_pinCodeScreen"
+            app:destination="@id/pinCodeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/languageScreen"
+        android:name="uz.gita.bank.presentation.ui.screens.LanguageScreen"
+        android:label="screen_langulage"
+        tools:layout="@layout/screen_langulage" >
+        <action
+            android:id="@+id/action_languageScreen_to_privacyPolicyScreen"
+            app:destination="@id/privacyPolicyScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="uz.gita.bank.presentation.ui.screens.LoginScreen"
+        android:label="screen_sign_in"
+        tools:layout="@layout/screen_sign_in" >
+        <action
+            android:id="@+id/action_loginScreen_to_registerScreen"
+            app:destination="@id/registerScreen" />
+        <action
+            android:id="@+id/action_loginScreen_to_accountRecoveryScreen"
+            app:destination="@id/accountRecoveryScreen" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/registerScreen"
+        android:name="uz.gita.bank.presentation.ui.screens.RegisterScreen"
+        android:label="screen_sign_up"
+        tools:layout="@layout/screen_sign_up" >
+        <action
+            android:id="@+id/action_registerScreen_to_verificationScreen"
+            app:destination="@id/verificationScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/verificationScreen"
+        android:name="uz.gita.bank.presentation.ui.screens.VerificationScreen"
+        android:label="screen_verification"
+        tools:layout="@layout/screen_verification" >
+        <action
+            android:id="@+id/action_verificationScreen_to_pinCodeScreen"
+            app:destination="@id/pinCodeScreen" />
+        <action
+            android:id="@+id/action_verificationScreen_to_changePasswordScreen"
+            app:destination="@id/changePasswordScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/pinCodeScreen"
+        android:name="uz.gita.bank.presentation.ui.screens.PinCodeScreen"
+        android:label="screen_pincode"
+        tools:layout="@layout/screen_pincode" />
+    <fragment
+        android:id="@+id/changePasswordScreen"
+        android:name="uz.gita.bank.presentation.ui.screens.ChangePasswordScreen"
+        android:label="screen_change_password"
+        tools:layout="@layout/screen_change_password" >
+        <action
+            android:id="@+id/action_changePasswordScreen_to_loginScreen"
+            app:destination="@id/loginScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacyPolicyScreen"
+        android:name="uz.gita.bank.presentation.ui.screens.PrivacyPolicyScreen"
+        android:label="screen_pravicy_policy"
+        tools:layout="@layout/screen_pravicy_policy" >
+        <action
+            android:id="@+id/action_privacyPolicyScreen_to_loginScreen"
+            app:destination="@id/loginScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountRecoveryScreen"
+        android:name="uz.gita.bank.presentation.ui.screens.AccountRecoveryScreen"
+        android:label="screen_account_recovery"
+        tools:layout="@layout/screen_account_recovery" >
+        <action
+            android:id="@+id/action_accountRecoveryScreen_to_verificationScreen"
+            app:destination="@id/verificationScreen" />
+    </fragment>
+</navigation>

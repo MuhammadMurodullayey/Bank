@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="uz.gita.bank.presentation.ui.screens.PrivacyPolicyScreen">
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sf_pro_display"
+        android:textStyle="bold"
+        android:text="@string/privacy_policy"/>
+
+    <LinearLayout
+        android:id="@+id/liner_image"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/bank"
+            android:layout_marginEnd="8dp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="144dp"
+            android:layout_height="20dp"
+            android:src="@drawable/gita_bank_black1"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/liner_image"
+        android:layout_marginStart="@dimen/dp_16"
+        android:textSize="16sp"
+        android:fontFamily="@font/sf_pro_display"
+        android:text="Service Privacy Policy"
+        android:textStyle="bold"
+        android:layout_marginTop="18dp"
+        android:textColor="@color/black"
+        />
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="@string/text_pravicy"
+            android:layout_marginHorizontal="16dp"
+            android:justificationMode="inter_word"
+            />
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/btn_accept"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/accept"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:fontFamily="@font/sf_pro_display"
+        android:textColor="@color/color_un_enable"
+        android:enabled="false"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/checkBox"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:padding="8dp"
+        android:background="@drawable/bg_checkbox"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scroll" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/checkBox"
+        app:layout_constraintBottom_toBottomOf="@id/checkBox"
+        app:layout_constraintStart_toEndOf="@id/checkBox"
+        android:layout_marginStart="8dp"
+        android:text="@string/chack"
+        android:textColor="@color/button_color"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
